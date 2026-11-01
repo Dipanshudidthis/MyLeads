@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used by Android's Auto Backup on devices below Android 12. Backs up the
+     local leads database and app preferences to the user's Google account so
+     they survive an uninstall/reinstall on the same device or account. -->
+<full-backup-content>
+    <include domain="root" path="app_flutter/"/>
+    <include domain="sharedpref" path="."/>
+    <exclude domain="root" path="app_flutter/leadflow.sqlite-journal"/>
+</full-backup-content>
